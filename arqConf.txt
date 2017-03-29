@@ -1,0 +1,12 @@
+Repositorio=C:\mod\temp.txt
+Code_p21=C:\mod\Code_original.txt
+ComentariosInf=false
+ComentariosCod=false
+Pla_Seg=55
+VelAvaMaq=900
+VelAvaCorte=400
+AvaProfCorte=2
+AvaAngSemiCir=10
+PorFerEspiral=50
+AvaLinhaProf=1
+tooltbl=C:\mod\tool.tbl

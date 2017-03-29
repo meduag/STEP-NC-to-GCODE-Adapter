@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.1" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <package id="1" language="java" name="br.UNB.LAB.Integrador" project="ConMapeamento" 
+    file="/ConMapeamento/src/br/UNB/LAB/Integrador" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="552" y="318"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="br.UNB.LAB.InfBasicas.DadosDaPeca" project="ConMapeamento" 
+    file="/ConMapeamento/src/br/UNB/LAB/InfBasicas/DadosDaPeca.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="280" y="310"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="br.UNB.LAB.InfBasicas.PlanoSeguranca" project="ConMapeamento" 
+    file="/ConMapeamento/src/br/UNB/LAB/InfBasicas/PlanoSeguranca.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="859" y="313"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="br.UNB.LAB.Integrador.Integrador" project="AdaptadorSTEP-NC_to_GCODEV2" 
+    file="/AdaptadorSTEP-NC_to_GCODEV2/src/br/UNB/LAB/Integrador/Integrador.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="305" width="289" x="972" y="154"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="br.UNB.LAB.InfBasicas.PlanoSeguranca" project="AdaptadorSTEP-NC_to_GCODEV2" 
+    file="/AdaptadorSTEP-NC_to_GCODEV2/src/br/UNB/LAB/InfBasicas/PlanoSeguranca.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="204" x="446" y="45"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
