@@ -1,0 +1,79 @@
+ISO-10303-21;
+HEADER;
+ /*GRIMA*/
+FILE_DESCRIPTION(
+/* description */ ('Descricao'),
+/* implementation_level */ '2;1');
+FILE_NAME(
+/* name */ ' ',
+/* time_stamp */ '2013-09-02T10:49:18',
+/* author */ ('MIGUEL2'),
+/* organization */ ('UFSC'),
+/* preprocessor_version */ 'ST-GENERATOR 5.3',
+/* originating_system */ ' ',
+/* authorization */ ' ');
+FILE_SCHEMA(('COMBINED_SCHEMA'));
+ENDSEC;
+DATA;
+#1=PROJECT('novo projeto',#60,(#2),$,$,$);
+#2=WORKPIECE('workpiece',#7,50.0,$,$,#9,());
+#3=AXIS2_PLACEMENT_3D('workpiece placement',#4,#5,#6);
+#4=CARTESIAN_POINT('',(0.0,0.0,0.0));
+#5=DIRECTION('',(0.0,0.0,1.0));
+#6=DIRECTION('',(1.0,0.0,0.0));
+#7=MATERIAL('SAE 1020','ACO SEM LIGA',(#8));
+#8=NUMERIC_PARAMETER('Hardness',250.0,'HB');
+#9=BLOCK('piece',#3,100.0,100.0,20.0);
+#10=SETUP('setup',#16,#15,(#20));
+#11=AXIS2_PLACEMENT_3D('',#12,#13,#14);
+#12=CARTESIAN_POINT('',(0.0,0.0,45.0));
+#13=DIRECTION('',(0.0,0.0,1.0));
+#14=DIRECTION('',(1.0,0.0,0.0));
+#15=PLANE('security plane',#11);
+#16=AXIS2_PLACEMENT_3D('origin',#17,#18,#19);
+#17=CARTESIAN_POINT('',(0.0,0.0,0.0));
+#18=DIRECTION('',(0.0,0.0,1.0));
+#19=DIRECTION('',(1.0,0.0,0.0));
+#20=WORKPIECE_SETUP(#2,#21,$,$,());
+#21=AXIS2_PLACEMENT_3D('',#22,#23,#24);
+#22=CARTESIAN_POINT('',(0.0,0.0,0.0));
+#23=DIRECTION('',(0.0,0.0,1.0));
+#24=DIRECTION('',(1.0,0.0,0.0));
+#25=CENTER_DRILLING($,$,'Center Drilling',5.0,#26,#27,#32,#33,$,10.0,$,$,$,$);
+#26=CARTESIAN_POINT('start point',(0.0,0.0,0.0));
+#27=MILLING_CUTTING_TOOL('center drill',#28,(#30),$,$,$);
+#28=CENTER_DRILL(#29,2,.RIGHT.,$,25.0);
+#29=MILLING_TOOL_DIMENSION(6.0,0.5235987755982988,0.0,10.0,0.0,0.0,0.0);
+#30=CUTTING_COMPONENT(50.0,#31,$,$,$);
+#31=MATERIAL('P','CARBIDE',());
+#32=MILLING_TECHNOLOGY(0.175,.TCP.,11.0,-5.83568124670283,$,.F.,.F.,.F.,$);
+#33=MILLING_MACHINE_FUNCTIONS(.T.,$,$,.F.,$,(),.T.,$,$,());
+#34=ROUND_HOLE('Furo com base conica',#2,(#25,#48),#35,#43,#44,$,#46);
+#35=AXIS2_PLACEMENT_3D('Furo com base conica placement',#36,#37,#38);
+#36=CARTESIAN_POINT('',(50.0,50.0,20.0));
+#37=DIRECTION('',(0.0,0.0,1.0));
+#38=DIRECTION('',(1.0,0.0,0.0));
+#39=AXIS2_PLACEMENT_3D('hole depth',#40,#41,#42);
+#40=CARTESIAN_POINT('',(0.0,0.0,-10.0));
+#41=DIRECTION('',(0.0,0.0,1.0));
+#42=DIRECTION('',(1.0,0.0,0.0));
+#43=PLANE('hole depth plane',#39);
+#44=TOLERANCED_LENGTH_MEASURE(10.0,#45);
+#45=PLUS_MINUS_VALUE(0.05,0.05,4);
+#46=CONICAL_HOLE_BOTTOM(0.3490658503988659,$);
+#47=MACHINING_WORKINGSTEP('ConicalBottomHole_RGH',#15,#34,#25,$);
+#48=DRILLING($,$,'Drilling',5.0,#56,#49,#54,#55,$,11.819851171331011,$,$,$,#57);
+#49=MILLING_CUTTING_TOOL('twist drill',#50,(#52),$,$,$);
+#50=TWIST_DRILL(#51,2,.RIGHT.,$,60.0);
+#51=MILLING_TOOL_DIMENSION(10.0,0.3490658503988659,0.0,40.0,0.0,0.0,0.0);
+#52=CUTTING_COMPONENT(70.0,#53,$,$,$);
+#53=MATERIAL('P','CARBIDE',());
+#54=MILLING_TECHNOLOGY(0.245,.TCP.,11.0,-3.5014087480216975,$,.F.,.F.,.F.,$);
+#55=MILLING_MACHINE_FUNCTIONS(.T.,$,$,.F.,$,(),.T.,$,$,());
+#56=CARTESIAN_POINT('start point',(0.0,0.0,0.0));
+#57=DRILLING_TYPE_STRATEGY($,$,$,$,$,$);
+#58=MACHINING_WORKINGSTEP('ConicalBottomHole_RGH',#15,#34,#48,$);
+#59=WORKPLAN('workplan setup plano: XY',(#47,#58),$,#10,$);
+#60=WORKPLAN('Main workplan',(#59),$,$,$);
+ENDSEC;
+END-ISO-10303-21;
