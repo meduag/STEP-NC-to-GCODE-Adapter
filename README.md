@@ -4,7 +4,7 @@ This project works with as converter from STEPNC (p21) to GCODE (RS274X)
 
 This code was tested on Windows 10 and Linux Ubuntu 10 
 
-The program used to implement java code was Eclipse
+The program used to implement java code was Eclipse. When you use Eclipse, you need to run it with administrator permissions
 
 The package Integrador has a class Integrador.java. In this class is the main()
 
