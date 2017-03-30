@@ -14,6 +14,13 @@ Only on Windows
 1- Make a folder on C drive, thus: C:\mod
 In this folder, the program put different files
 
+2- In project, you need to reconfigure the path of vecmath.jar library before run the program
+
+3- In Integrador.java class you need place the path of p21 file ("rutaLec" variable), the folder "Examples p21" has several examples from StepModeler program. 
+for example, rutaLec = "C:/mod/furo.p21"; the rutaLec (read path) variable has the path of p21 file, the furo.p21 example file part 21 
+
+
+
 for more information, see this turorials
 
 www.youtube.com/user/meduag
